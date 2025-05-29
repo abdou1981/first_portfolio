@@ -1,0 +1,217 @@
+.navbar, .navbar-nav, .nav-item, .navbar_menu, .navbar_contact, .nav_icon {
+  display: flex;
+}
+
+.navbar, .navbar-nav {
+  justify-content: space-between;
+}
+
+.navbar {
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 200;
+  margin: 15px calc((100% - 90%) / 2);
+}
+
+.sticky_navbar {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-small);
+  -webkit-border-radius: var(--border-radius-small);
+  -moz-border-radius: var(--border-radius-small);
+  -ms-border-radius: var(--border-radius-small);
+  -o-border-radius: var(--border-radius-small);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+.nav_bars, .nav_close {
+  display: none;
+  font-size: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar_logo{
+  font-size: 2.2rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.sticky_navbar_logo {
+  color: var(--dark-color);
+}
+
+.sticky_item {
+  color: var(--p-color);
+}
+
+.navbar_menu {
+  gap: 1.2rem;
+  align-items: center;
+  margin-left: 4.5rem;
+}
+
+.nav-item a {
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+.nav-item .active, .nav-item a:hover {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.navbar_contact {
+  gap: 1rem;
+}
+
+.nav_icon {
+  background-color: var(--white-color);
+  width: 45px;
+  height: 45px;
+  padding: 0.5rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.sticky_nav_icon {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.navbar_btn {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+
+.sticky_nav_btn {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  background-color: var(--white-color);
+}
+
+.navbar_btn:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.sticky_nav_btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius-small);
+    -webkit-border-radius: var(--border-radius-small);
+    -moz-border-radius: var(--border-radius-small);
+    -ms-border-radius: var(--border-radius-small);
+    -o-border-radius: var(--border-radius-small);
+}
+
+  .navbar_menu {
+    position: absolute;
+    z-index: -1;
+    flex-direction: column;
+    margin-left: 0;
+    background-color: var(--white-color);
+    width: 100%;
+    left: 0;
+    top: 70px;
+    padding: 15px 15px;
+    border-bottom-right-radius: var(--border-radius-small);
+    border-bottom-left-radius: var(--border-radius-small);
+    gap: 0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    display: none;
+  }
+
+  .navbar_men {
+    display: block;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.6rem;
+  }
+
+  .nav-item a {
+    color: var(--p-color);
+  }
+
+  .nav-item a:hover {
+    color: var(--primary-color);
+  }
+
+  .nav_bars {
+    display: flex;
+  }
+
+  .nav_bar {
+    display: none;
+  }
+
+  .nav_clos{
+    display: flex;
+  }
+
+  .navbar_logo a {
+    color: var(--dark-color);
+    font-size: 2rem;
+  }
+
+  .navbar_btn {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-size: 1rem;
+  }
+
+  .nav_icon {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .navbar {
+  padding: 1rem 1rem;
+}
+
+.nav_icon {
+  width: 40px;
+  height: 40px;
+}
+.navbar_contact {
+  gap: 0.5rem;
+}
+
+.navbar_btn {
+  font-size: 0.8rem;
+}
+}

@@ -1,0 +1,33 @@
+.footer_copy {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer_copy p {
+  font-size: 1rem;
+  color: var(--p-color);
+  margin: 0;
+  padding: 0;
+}
+
+.footer_copy p span {
+  border-left: 1px solid var(--border-color);
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.footer_copy p a {
+  color: var(--p-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.footer_copy p a:hover {
+  color: var(--primary-color);
+}

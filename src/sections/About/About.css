@@ -1,0 +1,149 @@
+.about-container {
+  display: flex;
+  margin: 120px 0;
+}
+
+.about-text {
+  padding: 0 1.2rem;
+}
+
+.title-about {
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.about-text h3 {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+} 
+
+.about-image, .about-text {
+  width: 50%;
+  margin: 0 0.8rem;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--border-radius-medium);
+  -webkit-border-radius: var(--border-radius-medium);
+  -moz-border-radius: var(--border-radius-medium);
+  -ms-border-radius: var(--border-radius-medium);
+  -o-border-radius: var(--border-radius-medium);
+}
+
+.about-text-p {
+  margin-bottom: 1rem;
+}
+
+.about-text-p a {
+  color: var(--p-color);
+}
+
+.about-text-p a:hover {
+  color: var(--primary-color);
+}
+
+.features-table {
+  display: flex;
+}
+
+.clients {
+  margin: 120px auto;
+}
+
+.clients h4 {
+  text-align: center;
+  font-size: var(--h4-font-size);
+  margin-bottom: 3rem;
+}
+
+.client-icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 110px;
+}
+
+.client-icon div {
+  width: 220px;
+  height: 120px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.client-icon div:hover {
+  transform: scale(1.3, 1.3);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  -o-transform: scale(1.3, 1.3);
+}
+
+.client-icon img {
+  display: block;
+  max-width: 100px;
+  margin: auto;
+  transition: all ease 0.2s;
+}
+
+@media screen and (max-width: 480px) {
+  .about-text h3 {
+    font-size: 24px;
+  } 
+}
+
+@media screen and (max-width: 991px) {
+  .about-container, .features-table {
+    flex-direction: column;
+  }
+
+  .features-table {
+    margin: 0 12px;
+  }
+
+  .about-image, .about-text {
+    width: 100%;
+    margin: 0;
+    padding: 0 12px;
+  }
+
+  .about-text {
+    margin-top: 3rem;
+  }
+
+  .client-icon {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .client-icon div {
+    width: calc(100% / 3);
+  }
+  .about-container, .clients {
+    margin: 80px auto;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .client-icon {
+    margin: 0 95px;
+  }
+  
+  .client-icon div {
+    width: 190px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .client-icon {
+    margin: 0 80px;
+  }
+  
+  .client-icon div {
+    width: 160px;
+  }
+}

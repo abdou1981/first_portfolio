@@ -1,0 +1,38 @@
+.projects {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  
+
+}
+
+.projects-title-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.projects-title {
+  width: calc(2/3 * 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 767px) {
+  .projects-title {
+    width: 100%;
+  }
+}
+
+
+.card-project-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .card-project-wrap {
+    gap: 24px;
+  }
+}

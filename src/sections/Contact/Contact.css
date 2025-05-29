@@ -1,0 +1,274 @@
+.title-contact {
+  width:calc(50% - 0.8rem);
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 3rem;
+}
+
+.contact, .contact-info, form {
+  display: flex;
+}
+
+.contact-info, .contact-form {
+  width: 50%;
+}
+
+.contact-info {
+  margin-right: 0.8rem;
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-small);
+  -webkit-border-radius: var(--border-radius-small);
+  -moz-border-radius: var(--border-radius-small);
+  -ms-border-radius: var(--border-radius-small);
+  -o-border-radius: var(--border-radius-small);
+}
+
+.contact-info-left, .contact-info-right {
+  width: 50%;
+  padding: 70px 30.8px 20px;
+}
+
+.contact-info-left {
+  border-right: 1px solid var(--border-color);
+}
+
+.contact-services {
+  margin-bottom: 1rem;
+}
+
+.contact-services-icon {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-large);
+  margin-right: 10px;
+  -webkit-border-radius: var(--border-radius-large);
+  -moz-border-radius: var(--border-radius-large);
+  -ms-border-radius: var(--border-radius-large);
+  -o-border-radius: var(--border-radius-large);
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5;
+  -moz-transition: all 0.5;
+  -ms-transition: all 0.5;
+  -o-transition: all 0.5;
+}
+
+.contact-services-icon:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.contact-info-title {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.section-btn {
+  font-size: 0.8rem;
+  background-color: var(--white-color);
+  border: 1px solid var(--border-color);
+  color: var(--p-color);
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding: 8px 15px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.section-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-color: var(--primary-color);
+}
+
+.contact-services span {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--p-color);
+}
+
+.contact-services span:hover {
+  color: var(--primary-color);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.contact-form {
+  margin-left: 0.8rem;
+}
+
+form {
+  position: relative;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-form input , .contact-form textarea {
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-small);
+  -webkit-border-radius: var(--border-radius-small);
+  -moz-border-radius: var(--border-radius-small);
+  -ms-border-radius: var(--border-radius-small);
+  -o-border-radius: var(--border-radius-small);
+  padding: 20px 10px;
+  outline-color: var(--primary-color);
+}
+
+.contact-form input {
+  width: calc(50% - 10px);
+}
+
+.contact-form textarea {
+  width: 100%;
+  resize: none;
+}
+
+.contact-form div {
+  width: calc(25% - 15px);
+  background-color: var(--white-color);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-small);
+  -webkit-border-radius: var(--border-radius-small);
+  -moz-border-radius: var(--border-radius-small);
+  -ms-border-radius: var(--border-radius-small);
+  -o-border-radius: var(--border-radius-small);
+}
+
+.form-icon {
+  color: var(--primary-color);
+}
+
+.contact-form span:nth-child(2) {
+  font-size: 1.1rem;
+  color: var(--p-color);
+  margin-top: 15px;
+}
+
+.contact-form div:hover, input:hover, textarea:hover {
+  border-color: var(--primary-color);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+input[placeholder], textarea[placeholder] {
+  color: var(--p-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form-btn {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  border: none;
+  font-size: 1.1rem;
+  padding: 1rem 3rem;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-large);
+  -webkit-border-radius: var(--border-radius-large);
+  -moz-border-radius: var(--border-radius-large);
+  -ms-border-radius: var(--border-radius-large);
+  -o-border-radius: var(--border-radius-large);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.form-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .title-contact {
+    width:  calc(2/3 * 100%);
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-info {
+    background-color: var(--section-bg-color);
+    gap: 20px;
+  }
+
+  .contact-info-left, .contact-info-right {
+    border: none;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius-small);
+    -webkit-border-radius: var(--border-radius-small);
+    -moz-border-radius: var(--border-radius-small);
+    -ms-border-radius: var(--border-radius-small);
+    -o-border-radius: var(--border-radius-small);
+}
+.contact-form {
+  margin-top: 3rem;
+}
+
+.contact-form div {
+  width: calc(50% - 10px);
+}
+
+.form-btn {
+  width: 100%;
+}
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+
+  .title-contact,.contact-info, .contact-form, .contact-info-left, .contact-info-right,.form-btn, .contact-form input {
+    width:  100%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.contact-info-left {
+  border-bottom: 1px solid var(--border-color);
+  border-right: none;
+}
+
+.contact-form {
+  margin-left: 0;
+  margin-bottom: 80px;
+}
+
+.contact-form div {
+  width: calc(50% - 10px);
+}
+}
